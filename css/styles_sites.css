@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --font1: 'Outfit';
+    --font2: 'Roboto';
+    --font3: 'Zilla Slab';
+    --sky: #73C7E3;
+    --linen: #FFF9F0;
+    --turqouise: #24b0ba;
+    --light: #f0f2f2;
+    --navy: #2E4a70;
+}
+
+body {
+   min-height:100vh;
+   justify-content:center;
+   align-items:center;
+   display: flex;
+   flex-direction: column;
+   background-color:var(--linen);
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.picture_box {
+    border: 20px solid #e0e0e0;
+	border-radius:20px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.picture_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.info_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.Fname {
+
+    font-size: 24px;
+    font-weight: bold;
+	font-family:var(--font1);
+    margin-bottom: 10px;
+	padding:20px;
+	background-color:var(--light);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.services, .address{
+    margin-bottom: 10px;
+	font-family:var(--font2);
+	padding:20px;
+	background-color:var(--light);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.services {
+    font-size: 16px;
+}
+.address, .contacts {
+    font-size: 14px;
+}
+.contacts{
+	margin-bottom: 10px;
+	padding:20px;
+	background-color:var(--light);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+	font-family:var(--font3);
+}
+.return{
+	font-family:var(--font3);
+	font-size:30px;
+	color:black;
+	padding-top:15px;
+}
+
+.return a{
+	color:black;
+	text-decoration:none;
+}
+.return a:active{
+	color:var(--sky);
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .picture_box, .info_box {
+        width: 100%;
+    }	
+    .info_box {
+        padding: 20px;
+    }
+    .services, .address, .contacts {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .Fname {
+        width: 100%;
+        text-align: center;
+    }
+    .contacts {
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .Fname {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .services, .address, .contacts {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .return {
+        font-size: 24px;
+    }
+}
