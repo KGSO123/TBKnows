@@ -96,26 +96,24 @@ body::-webkit-scrollbar{
 }
 
 .container {
-       position:absolute;
-        top: 330%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color:var(--linen);
-		
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 10px 20px 90px black;
-        
-    }
+    position: absolute;
+    top: 330%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
 
-    .container img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px; /* Adjust margin as needed */
-    }
-
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
 .container-ptb{
 	text-align:center;
 }
@@ -206,11 +204,13 @@ img {
 @media screen and (max-width: 600px) {
 	
 	 .container {
-        width: 90%; /* Adjust width for mobile */
-        max-width: none; /* Remove max-width for mobile */
-        max-height: none; /* Remove max-height for mobile */
-        border-radius: 0; /* Remove border-radius for mobile */
-        padding: 10px; /* Adjust padding for mobile */
+		top: 260%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: none; 
+        max-height: none; 
+        border-radius: 0;
+        padding: 10px; 
 	 }		
 	.content-nav{
 		position:sticky;
