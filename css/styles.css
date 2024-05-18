@@ -86,10 +86,10 @@ body {
 }
 .proceed{
 	font-size:1.5em;
-	background-color:var(--navy);
+	
 	
 }
-.proceed:hover{
+.proceed:active{
 	background-color:var(--turqouise);
 }
 /* Media query for screens smaller than 600px */
